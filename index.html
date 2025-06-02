@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>UMADIG - União da Mocidade da ADIG</title>
+  <title>UMADIG - Mocidade ADIG</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
@@ -14,31 +14,37 @@
 
     body {
       background-color: var(--offwhite-umadig);
-      color: #000;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .navbar {
       background-color: var(--verde-umadig);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     }
 
     .navbar-brand,
     .navbar-nav .nav-link {
-      color: white !important;
+      color: #fff !important;
+      font-weight: 500;
     }
 
-    .navbar-toggler {
-      border-color: white;
+    .navbar-brand:hover,
+    .navbar-nav .nav-link:hover {
+      opacity: 0.85;
     }
 
     .lema {
-      background-color: #e8f5e9;
+      background: linear-gradient(to right, #e8f5e9, #d4efdf);
       border-left: 5px solid var(--verde-umadig);
       padding: 15px;
       font-style: italic;
+      border-radius: 4px;
     }
 
     section h2 {
       color: var(--verde-umadig);
+      font-weight: bold;
     }
 
     .card.border-primary {
@@ -50,7 +56,7 @@
     }
 
     footer {
-      background-color: #000;
+      background-color: #111;
       color: white;
       padding: 20px 0;
     }
@@ -61,52 +67,68 @@
     }
 
     footer a:hover {
-      color: white;
+      color: #fff;
     }
 
     iframe.calendar {
       width: 100%;
       height: 600px;
       border: none;
+      border-radius: 8px;
     }
+
     .parallax-header {
-  background-image: url('./img/image1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 50vh;
-  min-height: 400px;
-  color: white;
-  position: relative;
-}
+      background-image: url('./img/image1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 55vh;
+      min-height: 400px;
+      color: white;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-.parallax-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4); /* escurece a imagem para o texto se destacar */
-}
+    .parallax-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
 
-.parallax-header .container {
-  position: relative;
-  z-index: 1;
-}
+    .parallax-header .container {
+      position: relative;
+      z-index: 1;
+    }
 
-.carousel-img {
-  height: 75vh;
-  width: 100%;
-  object-fit: cover;
-}
+    .carousel-img {
+      height: 75vh;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
 
-/* Em telas pequenas, limitar a altura a 50vh, por exemplo */
-@media (max-width: 768px) {
-  .carousel-img {
-    height: 50vh;
-  }
-}
+    @media (max-width: 768px) {
+      .carousel-img {
+        height: 45vh;
+      }
+    }
+
+    .btn-outline-success {
+      border-radius: 30px;
+      padding: 8px 20px;
+      font-weight: 500;
+    }
+
+    table.table-hover tbody tr:hover {
+      background-color: #f1fdf5;
+    }
   </style>
 </head>
 <body>
